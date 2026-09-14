@@ -145,7 +145,7 @@ client_select()
 	apikey="AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8"
 
 	# Default user-agent
-	user_agent="Mozilla/5.0 (Windows NT 10.0; rv:78.0) Gecko/20100101 Firefox/78.0"
+	user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36"
 
 	# Reset values, in case this function is used multiple times
 	client_name=""
@@ -162,17 +162,17 @@ client_select()
 	case "$1" in
 		web)
 			client_name="WEB"
-			client_vers="2.20230217.01.00"
+			client_vers="2.20260722.01.00"
 		;;
 
 		web-embed)
 			client_name="WEB_EMBEDDED_PLAYER"
-			client_vers="1.20230217.01.0"
+			client_vers="2.20260722.01.00"
 		;;
 
 		web-mobile)
 			client_name="MWEB"
-			client_vers="2.20230216.06.00"
+			client_vers="2.20260722.01.00"
 		;;
 
 		android)
@@ -189,18 +189,18 @@ client_select()
 		apple-ios)
 			apikey="AIzaSyB-63vPrdThhKuerbB2N_l7Kwwcxj6yUAc"
 			client_name="IOS"
-			client_vers="17.31.4"
+			client_vers="20.11.6"
 
 			client_extra_device_make="Apple"
-			client_extra_device_model="iPhone11,8"
-			client_extra_os_vers="15.2.0"
+			client_extra_device_model="iPhone14,5"
+			client_extra_os_vers="18.5.0.22F76"
 
-			user_agent="com.google.ios.youtube/17.31.4 (iPhone11,8; U; CPU iOS 15_2 like Mac OS X; en_GB)"
+			user_agent="com.google.ios.youtube/20.11.6 (iPhone14,5; U; CPU iOS 18_5 like Mac OS X;)"
 		;;
 
 		tv-html5)
 			client_name="TVHTML5"
-			client_vers="7.20220325"
+			client_vers="2.20260722.01.00"
 		;;
 
 		tv-html5-embed)
